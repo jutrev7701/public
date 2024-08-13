@@ -1,13 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Project</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My App</title>
+    <link rel="stylesheet" href="Styles/Streamlist.css">
+    <style>
+        body {
+            background-color: blueviolet;
+            color: white; /* Added for better visibility of text */
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
+    <header>
+        <h1>EZTechMovie</h1>
+    </header>
+</body>
+</html>
+    <!-- custom css -->
+    <link rel="stylesheet" href="Styles/Layout.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="logo">
+        <div class="container">
+          <p>Movie<span>Search</span></p>
+        </div>
+      </div>
+      <div class="search-container">
+        <div class="search-element">
+          <h3>Search Movie:</h3>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search Movie Title ..."
+            id="movie-search-box"
+            onkeyup="findMovies()"
+            onclick="findMovies()"
+          />
 
-    <script src="path/to/your/bundle.js"></script>
+          <div class="search-list" id="search-list"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="result-container">
+          <div class="result-grid" id="result-grid"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+    <nav>
+        <ul>
+          <li><a href="Styles/Home.css">Home</a></li>
+          <li><a href="Styles/About.css">About Us</a></li>
+          <li><a href="Styles/Cart.css">Cart</a></li>
+        </ul>
+    </nav>
 </body>
 </html>
